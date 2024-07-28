@@ -38,7 +38,7 @@ const Homepage = () => {
 
   async function getData(query, category) {
     await axios
-      .get("http://localhost:5000/api/buy-medicine/products/search", {
+      .get("https://diagnoze-backend.vercel.app/api/buy-medicine/products/search", {
         params: {
           query: query,
         },

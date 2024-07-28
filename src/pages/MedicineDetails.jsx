@@ -63,7 +63,7 @@ export default function MedicineDetail() {
   useEffect(() => {
     async function getMedicineDetail() {
       await axios
-        .get(`http://localhost:5000/api/buy-medicine/products/details`, {
+        .get(`https://diagnoze-backend.vercel.app/api/buy-medicine/products/details`, {
           params: {
             query: id,
           },
